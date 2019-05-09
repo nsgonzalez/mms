@@ -53,7 +53,7 @@ if [ $? != 0 ] ; then echo "Terminating..." >&2 ; exit 1 ; fi
 eval set -- "$TEMP"
 
 usage="usage:	./$(basename "$0") [-h|--host <ip address>] [-p|--port <port>] [-s|--show-nodes]
-	./$(basename "$0") [-h|--host <ip address>] [-p|--port <port>] [-n|--node <node>] { [--context-stop] | [--context-disable] | [--context-enable] } [<Node ID> <Context>]
+	./$(basename "$0") [-h|--host <ip address>] [-p|--port <port>] [-n|--node <node>] { [--context-stop] | [--context-disable] | [--context-enable] } [<Context>]
 
 where:
     (-h|--host)			set the apache mcm host
